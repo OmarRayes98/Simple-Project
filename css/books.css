@@ -75,6 +75,9 @@ select:required:invalid {
    width: 100%;
    margin-bottom: 20px;
    height: 140px;
+   object-fit: cover;
+   object-position: center;
+
 }
 
 .book-name{
@@ -128,14 +131,7 @@ select:required:invalid {
 } 
 
 /*________Pagination___________*/
-/*
-.pagination{
-   margin-top: 80px;
-   text-align: center;
-   display: flex;
-   justify-content: center;
-}
-*/
+
 
 .simple-pagination ul{
    margin-top: 80px;
@@ -194,6 +190,7 @@ select:required:invalid {
    width: 80px !important;
 }
 
+
 /*responsive*/
 @media(max-width: 767px){
 
@@ -213,7 +210,7 @@ select:required:invalid {
 
    .simple-pagination .prev::before,
    .simple-pagination .next::before
-    {
+   {
       position: absolute;
       visibility: visible;
       width: 40px;
@@ -241,7 +238,6 @@ select:required:invalid {
 
    }
 
-
    .simple-pagination .prev:hover::before,
    .simple-pagination .next:hover::before{
       
@@ -250,14 +246,14 @@ select:required:invalid {
    }
 
       /*End Pagination*/
-
    /*__________________________________________*/
 
    .book-itmes{
       grid-template-columns: repeat(2, 1fr);
 
  }
- }
+ }/* End max-width : 767*/
+
 
 @media(max-width: 574px){
    .book-itmes{
@@ -269,7 +265,6 @@ select:required:invalid {
    .simple-pagination .next{
    width: 40px !important;
 }
-
 }
 
 @media(max-width: 400px){
