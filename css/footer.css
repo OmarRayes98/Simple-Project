@@ -113,16 +113,19 @@ footer .copyright .lastletter{
 
 @media(max-width: 400px){
 
+    footer{
+    
+        padding: 25px 0 20px 0;
+        }
+
     .contact-footer{
         margin: 12px 0 12px 0;
     }
 
     .footer-title{
 
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 14px;
-
-
       }
     
 

@@ -158,8 +158,8 @@ function paginationFunc(){
 
             items: numItems,
             itemsOnPage: perPage,
-            prevText: "<<",
-            nextText : ">>",
+            prevText: "Previous",
+            nextText : "Next",
             displayedPages: 2,
         
             onPageClick : function (pageNumber){

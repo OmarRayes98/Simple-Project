@@ -164,7 +164,7 @@ select:required:invalid {
    color: #252525;
   
    box-shadow: inset 0 5px 10px rgba(0,0,0,.1) , 0 2px 5px rgba(0,0,0, .5);
-   transition: all 1s ease;
+   transition: background-color 1s ease;
 }
 
 .simple-pagination li a:hover{
@@ -196,6 +196,63 @@ select:required:invalid {
 
 /*responsive*/
 @media(max-width: 767px){
+
+   /*Start Pagination*/
+   .simple-pagination .prev,
+   .simple-pagination .next{
+      visibility: hidden;
+      position: relative;
+   }
+
+   .simple-pagination .prev.current::before,
+   .simple-pagination .next.current::before{
+   color: #fff;
+   background-color: #222;
+   border: none;   
+}
+
+   .simple-pagination .prev::before,
+   .simple-pagination .next::before
+    {
+      position: absolute;
+      visibility: visible;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      background-color: #fff;
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      color: #252525;
+   
+      box-shadow: inset 0 5px 10px rgba(0,0,0,.1) , 0 2px 5px rgba(0,0,0, .5);
+      transition: background-color 1s ease;
+   }
+
+   .simple-pagination .prev::before{
+      content: "<<";
+      right: 0;
+
+   }
+
+   .simple-pagination .next::before{
+      content: ">>";
+      left: 0;
+
+   }
+
+
+   .simple-pagination .prev:hover::before,
+   .simple-pagination .next:hover::before{
+      
+      background-color: #000;
+      color: #fff;
+   }
+
+      /*End Pagination*/
+
+   /*__________________________________________*/
+
    .book-itmes{
       grid-template-columns: repeat(2, 1fr);
 
