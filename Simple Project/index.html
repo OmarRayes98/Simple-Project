@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="keywords" content="" /> 
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Template Task</title>
+
+        <!-- Css Files -->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Varela Round' >
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat' >
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel ="stylesheet" href="css/books.css">
+        <link rel ="stylesheet" href="css/footer.css">
+
+    </head>
+
+    <body>
+
+        <!--Navbar with logo --> 
+        <nav class="navbar">
+            <div class="container">
+            <div class="nav-content">
+            <div class="logo">
+                <img src="./images/LogoCompany.jpg" alt="Logo Image" draggable="false"> 
+            </div>
+
+            <p class="nav-links">
+                <a class="ctn">Dashboard</a> 
+            </p>
+
+        </div>
+            </div><!--/container-->  
+        </nav> <!--/nav-->
+
+        <!--Section Books -->
+        <section class="books section-padding">
+            <div class="section-header">
+                <h2 class="section-title">Books</h2>
+                <span class="line"></span>
+    
+            </div><!--./section-header-->
+
+            <div class="container">
+
+                <div class="search-filter">
+                    <select  id="genre-filter" required>
+                        <option value="" hidden>genre</option>
+                        <option value="all" >All</option>
+                        <option value="mystery" >Mystery</option>
+                        <option value="thriller" >Thriller</option>
+                        <option value="horror" >Horror</option>
+                        <option value="romance" >Romance</option>
+                    </select>
+
+                    <div class="seachbox">
+                    <input id="id_search"  type="text" placeholder="Search By Name" />
+                    <i class="fa fa-search  fa-flip-horizontal"></i>
+                    </div>
+                </div>
+
+                <div class="book-itmes">
+
+                </div><!-- ./book-items-->
+
+                <!--pagination -->
+                <div class="pagination list-unstyle">
+<!--                     
+                        <li class="page-item previous-page"><a class="page-link">Previous</a></li>
+                        <li class="page-item"><a class="page-link">1</a></li> -->
+                        <!-- <li class="page-item dots-page"><a class="page-link">2</a></li>
+                        <li class="page-item dots-page"><a class="page-link">5</a></li>
+                        <li class="page-item current-page"><a class="page-link">9</a></li> -->
+                        <!-- <li class="page-item"><a class="page-link">2</a></li>
+                        <li class="page-item"><a class="page-link">3</a></li>
+                        <li class="page-item next-page"><a class="page-link">Next</a></li> -->
+
+                </div>
+
+            </div><!--./container-->
+
+        </section>
+        <!--End Section Books -->
+
+         <!-- Footer -->
+         <footer>
+            <div class="container">
+                <h2 class="footer-title">contact info</h2>
+
+            <div class="footer-content">
+                <div class="contact-footer">
+                    <ul class="contact-footer-info">
+                        <li>
+                            <span>Email : </span>
+                            <p><a href="mailto:test@test.com">test@test.com</a></p>     
+                        </li>
+
+                    <li>
+                        <span>Phone : </span>
+                        <p><a href="tel:+963 963 991 198">+963 963 991 198</a></p>
+                    </li>
+
+                    </ul>
+                </div>         
+    
+            <div class="contact-footer">
+                <ul class="contact-footer-info">
+                 <li>
+                    <span>Address : </span>
+                    <p>Test road, City, Country</p>     
+                 </li>
+                </ul>
+            </div>         
+
+        </div><!--/footer-content-->
+
+        <div class="copyright" >
+            <p> copyright &copy; 2022 - all right reserved by <span class="lastletter">aratech </span></p>
+           </div>
+        </div> <!--/container-->
+        </footer>
+        <!--End Footer -->
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"> </script>
+
+        <script src="js/data.js"></script>
+        <script src="js/script.js"></script>
+</body>
+</html>

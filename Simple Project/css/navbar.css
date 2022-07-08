@@ -1,0 +1,52 @@
+/*Nav*/
+
+.navbar{   
+    width: 100%;
+    background-color: var(--overlaycolor);
+    padding: 6px;
+    position: fixed;
+}
+
+.navbar .nav-content{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    margin-top: 2px;
+}
+
+.navbar .logo img{
+    width: 105px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/*________________ right of navbar________  */
+
+
+.navbar .nav-links > a {
+        font-size: 15px;
+        color: var(--whitecolor);
+        cursor: pointer;
+    }
+
+.navbar .nav-links > a:after 
+    {
+        content: "";
+        display: block;
+        margin-top: 2px;
+        height: 1.5px;
+        background-color: var(--maincolor);
+        transition: width 0.5s;
+    }
+
+.navbar .nav-links > a:after {
+        width: 0;
+    }
+    
+.navbar .nav-links > a:hover:after{
+        width: 100%;
+    }
+    /*_______________________________________________*/
