@@ -218,7 +218,7 @@ select:required:invalid {
 @media(max-width: 400px){
 
    #genre-filter{
-      width: 50px;
+      width: 80px;
       font-size: 12px;
    }
    
@@ -229,7 +229,7 @@ select:required:invalid {
    }
    
    .seachbox i {
-      right: 8px;
+      right: 6px;
       font-size: 10px;
    }
 }

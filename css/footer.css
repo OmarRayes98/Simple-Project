@@ -62,16 +62,15 @@ footer{
 
 
 
-    footer .copyright{
+footer .copyright{
         color: #999;
         width: 100%;
         padding: 30px 0 0 0 ;
         text-align: center;
         font-size: 13px;
-        text-transform: uppercase;
     }
     
-    footer .copyright .lastletter{
+footer .copyright .lastletter{
         color: var(--maincolor);
     }
 /*____________________________________________________________*/
@@ -111,3 +110,30 @@ footer{
 
     }
 }
+
+@media(max-width: 400px){
+
+    .contact-footer{
+        margin: 12px 0 12px 0;
+    }
+
+    .footer-title{
+
+        font-size: 16px;
+        margin-bottom: 14px;
+
+
+      }
+    
+
+
+    .contact-footer-info li span{
+        font-size: 11px;
+    }
+
+    .contact-footer-info li p{
+        font-size: 10px;
+    }
+
+}
+

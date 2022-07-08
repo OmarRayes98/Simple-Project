@@ -5,6 +5,7 @@
     background-color: var(--overlaycolor);
     padding: 6px;
     position: fixed;
+    z-index:1;
 }
 
 .navbar .nav-content{
