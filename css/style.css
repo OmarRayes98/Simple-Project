@@ -13,7 +13,7 @@ body {
     --maincolor:#6195ff;
     --whitecolor:#fff;
     --hovercolor:#6380fe;
-    --overlaycolor:rgba(8, 128, 164, 0.4);
+    --overlaycolor:rgba(8, 128, 164);
 }
 
 .container{

@@ -27,8 +27,6 @@ select:required:invalid {
    font-family: inherit; /*"Oswald" , sans-serif*/
    border: 1px solid rgb(159, 159, 159);
    outline: none;
-
-
 }
 
 .seachbox{
@@ -183,6 +181,7 @@ select:required:invalid {
    cursor: pointer;
 }
 
+
 .simple-pagination .prev.current,
 .simple-pagination .next.current {
    color: #fff;
@@ -214,5 +213,25 @@ select:required:invalid {
    width: 40px !important;
 }
 
-
 }
+
+@media(max-width: 400px){
+
+   #genre-filter{
+      width: 50px;
+      font-size: 12px;
+   }
+   
+   #id_search {    
+   
+      width: 120px;
+      font-size: 12px;
+   }
+   
+   .seachbox i {
+      right: 8px;
+      font-size: 10px;
+   }
+}
+
+

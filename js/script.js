@@ -134,7 +134,26 @@ function paginationFunc(){
     
     items.slice(perPage).hide();
 
-    if(window.matchMedia("(max-width:574px)").matches) {
+    // if(window.matchMedia("(max-width:574px)").matches) {
+    //     $('.pagination').pagination({
+
+    //         items: numItems,
+    //         itemsOnPage: perPage,
+    //         prevText: "<<",
+    //         nextText : ">>",
+    //         displayedPages: 2,
+        
+    //         onPageClick : function (pageNumber){
+        
+    //             var showFrom = perPage * (pageNumber -1);
+    //             var showTo = showFrom + perPage;
+        
+    //             items.hide().slice(showFrom, showTo).show();
+                
+    //         }
+        
+    //     })
+    // }else{
         $('.pagination').pagination({
 
             items: numItems,
@@ -149,32 +168,12 @@ function paginationFunc(){
                 var showTo = showFrom + perPage;
         
                 items.hide().slice(showFrom, showTo).show();
-                
-            }
-        
-        })
-    }else{
-        $('.pagination').pagination({
-
-            items: numItems,
-            itemsOnPage: perPage,
-            prevText: "Previous",
-            nextText : "Next",
-            displayedPages: 2,
-        
-            onPageClick : function (pageNumber){
-        
-                var showFrom = perPage * (pageNumber -1);
-                var showTo = showFrom + perPage;
-        
-                items.hide().slice(showFrom, showTo).show();
-                
             }
         
         })
     }
 
-}
+// }
 
 paginationFunc();
-window.addEventListener('resize', paginationFunc);
+// window.addEventListener('resize', paginationFunc);

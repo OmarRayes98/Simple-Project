@@ -1,7 +1,7 @@
 let booksDB = [
     {
         id :1 ,
-        title :'title',
+        title :'Crime 1',
         author:'mystery',
         desc: 'Lorem ipsm , dolor sit amet consectetur.',
         ImageUrl: 'images/book-image.jpg',
@@ -9,7 +9,7 @@ let booksDB = [
     },
     {
         id :2 ,
-        title :'title',
+        title :'Crime 2',
         author:'mystery',
         desc: 'Lorem ipsm , dolor sit amet consectetur.',
         ImageUrl: 'images/book-image.jpg',
@@ -17,7 +17,7 @@ let booksDB = [
     },
     {
         id :3,
-        title :'title',
+        title :'Crime 3',
         author:'mystery',
         desc: 'Lorem ipsm , dolor sit amet consectetur.',
         ImageUrl: 'images/book-image.jpg',
@@ -25,7 +25,7 @@ let booksDB = [
     },
     {
         id :4 ,
-        title :'title',
+        title :'Wrong Turn 1',
         author:'horror',
         desc: 'Lorem ipsm , dolor sit amet consectetur.',
         ImageUrl: 'images/book-image.jpg',
@@ -33,7 +33,7 @@ let booksDB = [
     },
     {
         id :5 ,
-        title :'title',
+        title :'Wrong Turn 2',
         author:'horror',
         desc: 'Lorem ipsm , dolor sit amet consectetur.',
         ImageUrl: 'images/book-image.jpg',
@@ -41,7 +41,7 @@ let booksDB = [
     },
     {
         id :6 ,
-        title :'title',
+        title :'Road 1',
         author:'romance',
         desc: 'Lorem ipsm , dolor sit amet consectetur.',
         ImageUrl: 'images/book-image.jpg',
@@ -49,7 +49,7 @@ let booksDB = [
     },
     {
         id :7,
-        title :'title',
+        title :'Road 2',
         author:'romance',
         desc: 'Lorem ipsm , dolor sit amet consectetur.',
         ImageUrl: 'images/book-image.jpg',
