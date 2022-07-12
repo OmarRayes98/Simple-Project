@@ -6,16 +6,17 @@
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Template Task</title>
+        <title>Task Management</title>
 
         <!-- Css Files -->
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Varela Round' >
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat' >
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Varela Round'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+
         <link rel="stylesheet" href="css/style.css">
 
         <link rel="stylesheet" href="css/navbar.css">
-        <link rel ="stylesheet" href="css/books.css">
+        <link rel="stylesheet" href="css/books-Managenemt.css">
         <link rel ="stylesheet" href="css/footer.css">
 
     </head>
@@ -27,12 +28,10 @@
             <div class="container">
             <div class="nav-content">
             <div class="logo">
+                <a href="index.html">
                 <img src="./images/LogoCompany.jpg" alt="Logo Image" draggable="false"> 
+                </a>
             </div>
-
-            <p class="nav-links">
-                <a href="booksManagement.html" class="ctn">Dashboard</a> 
-            </p>
 
         </div>
             </div><!--/container-->  
@@ -41,45 +40,34 @@
         <!--Section Books -->
         <section class="books section-padding">
             <div class="section-header">
-                <h2 class="section-title">Books</h2>
+                <h2 class="section-title">Books Management</h2>
                 <span class="line"></span>
-    
             </div><!--./section-header-->
 
             <div class="container">
 
-                <div class="search-filter">
-                    <select  id="genre-filter" required>
-                        <option value="" hidden>genre</option>
-                        <option value="all" >All</option>
-                        <option value="mystery" >Mystery</option>
-                        <option value="thriller" >Thriller</option>
-                        <option value="horror" >Horror</option>
-                        <option value="romance" >Romance</option>
-                    </select>
-
-                    <div class="seachbox">
-                    <input id="id_search"  type="text" placeholder="Search By Name" />
-                    <i class="fa fa-search  fa-flip-horizontal"></i>
-                    </div>
+                <div class="btn">
+                    <a href="addBook.html">Add</a>
                 </div>
 
-                <div class="book-itmes">
-
-                </div><!-- ./book-items-->
-
-                <!--pagination -->
-                <div class="pagination list-unstyle">
-<!--                     
-                        <li class="page-item previous-page"><a class="page-link">Previous</a></li>
-                        <li class="page-item"><a class="page-link">1</a></li> -->
-                        <!-- <li class="page-item dots-page"><a class="page-link">2</a></li>
-                        <li class="page-item dots-page"><a class="page-link">5</a></li>
-                        <li class="page-item current-page"><a class="page-link">9</a></li> -->
-                        <!-- <li class="page-item"><a class="page-link">2</a></li>
-                        <li class="page-item"><a class="page-link">3</a></li>
-                        <li class="page-item next-page"><a class="page-link">Next</a></li> -->
-
+                <div class="table_responsive">
+                    <table id="table-id" >
+                      <thead>
+                        <tr>
+                          <th class="no-sort">ID</th>
+                          <th>Title</th>
+                          <th class="no-sort">Image</th>
+                          <th class="no-sort">Genre</th>
+                          <th class="no-sort">Description</th>
+                          <th class="no-sort">Actions</th>
+                
+                        </tr>
+                      </thead>
+                
+                      <tbody>
+                
+                      </tbody>
+                    </table>
                 </div>
 
             </div><!--./container-->
@@ -126,11 +114,16 @@
         </footer>
         <!--End Footer -->
 
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"> </script>
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+        
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
         <script src="js/data.js"></script>
-        <script src="js/script.js"></script>
+        <script src="js/books-Management.js"></script>
+
+
 </body>
 </html>

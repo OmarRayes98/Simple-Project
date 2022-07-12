@@ -73,7 +73,7 @@ a{
     display: block;
     margin: 0 auto 40px auto;
     height: 2px;
-    background-color: #6195ff;
+    background-color: var(--maincolor);
 }
 
 /* End Section header*/

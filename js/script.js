@@ -4,10 +4,6 @@ let booksDom = document.querySelector(".book-itmes");
 let books = JSON.parse(localStorage.getItem('books')) || booksDB;
 
 
-//___________
-
-
-
 //________
 
 let drawBooksUI;
@@ -121,7 +117,6 @@ function getBooksFilterByGenre(e){
     }
 }
 
-//_____________________________________
 
 //________________________________________
 
@@ -134,26 +129,7 @@ function paginationFunc(){
     
     items.slice(perPage).hide();
 
-    // if(window.matchMedia("(max-width:574px)").matches) {
-    //     $('.pagination').pagination({
 
-    //         items: numItems,
-    //         itemsOnPage: perPage,
-    //         prevText: "<<",
-    //         nextText : ">>",
-    //         displayedPages: 2,
-        
-    //         onPageClick : function (pageNumber){
-        
-    //             var showFrom = perPage * (pageNumber -1);
-    //             var showTo = showFrom + perPage;
-        
-    //             items.hide().slice(showFrom, showTo).show();
-                
-    //         }
-        
-    //     })
-    // }else{
         $('.pagination').pagination({
 
             items: numItems,
@@ -173,7 +149,5 @@ function paginationFunc(){
         })
     }
 
-// }
 
 paginationFunc();
-// window.addEventListener('resize', paginationFunc);

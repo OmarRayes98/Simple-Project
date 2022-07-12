@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="keywords" content="" /> 
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>New Book</title>
+
+        <!-- Css Files -->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Varela Round'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/bookForm.css">
+        <link rel ="stylesheet" href="css/footer.css">
+
+    </head>
+
+    <body>
+
+        <!--Navbar with logo --> 
+        <nav class="navbar">
+            <div class="container">
+            <div class="nav-content">
+            <div class="logo">
+                <img src="./images/LogoCompany.jpg" alt="Logo Image" draggable="false"> 
+            </div>
+
+            <p class="nav-links">
+                <a href="booksManagement.html" class="ctn">Books Management</a> 
+            </p>
+
+        </div>
+            </div><!--/container-->  
+        </nav> <!--/nav-->
+
+        <!--Section Form -->
+        <section class="section-form">
+                <!--Form-->
+                <div class="wrapper">
+                    <h2>Add Book</h2>
+                    <form id="add-form" class="form">
+
+                        <div class="inputfield">
+                            <input type="file" id="upload-image-file" required />
+                            </div>
+
+                        <div class="inputfield">
+                           <input type="text" id="book-name" class="input" placeholder="title" required>
+                        </div>
+
+                         <div class="inputfield">
+                           <div class="custom_select">
+                            <select id="gener-filter" required>
+                                <option value="" hidden>genre</option>
+                                <option value="mystery" >Mystery</option>
+                                <option value="thriller" >Thriller</option>
+                                <option value="horror" >Horror</option>
+                                <option value="romance" >Romance</option>
+                            </select>
+                           </div>
+                        </div> 
+                       <div class="inputfield">
+                           <textarea class="textarea" required id="book-desc" placeholder="description..."></textarea>
+                        </div> 
+                       <div class="inputfield">
+                         <input type="submit" value="Add" class="btn">
+                       </div>
+                     </form>
+
+
+                </div>
+
+        </section>
+        <!--End Section Form -->
+
+         <!-- Footer -->
+         <footer>
+            <div class="container">
+                <h2 class="footer-title">contact info</h2>
+
+            <div class="footer-content">
+                <div class="contact-footer">
+                    <ul class="contact-footer-info">
+                        <li>
+                            <span>Email : </span>
+                            <p><a href="mailto:test@test.com">test@test.com</a></p>     
+                        </li>
+
+                    <li>
+                        <span>Phone : </span>
+                        <p><a href="tel:+963 963 991 198">+963 963 991 198</a></p>
+                    </li>
+
+                    </ul>
+                </div>         
+    
+            <div class="contact-footer">
+                <ul class="contact-footer-info">
+                 <li>
+                    <span>Address : </span>
+                    <p>Test road, City, Country</p>     
+                 </li>
+                </ul>
+            </div>         
+
+        </div><!--/footer-content-->
+
+        <div class="copyright" >
+            <p> copyright &copy; 2022 - all right reserved by <span class="lastletter">aratech </span></p>
+           </div>
+        </div> <!--/container-->
+        </footer>
+        <!--End Footer -->
+        
+
+        <script src="js/data.js"></script>
+        <script src="js/addBook.js"></script>
+
+</body>
+</html>
